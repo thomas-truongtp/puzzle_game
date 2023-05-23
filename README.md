@@ -1,2 +1,2 @@
 # puzzle_game
-nestify game link: https://waterpuzzle.netlify.app/
+netlify game link: https://waterpuzzle.netlify.app/
