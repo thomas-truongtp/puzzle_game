@@ -262,31 +262,37 @@ function shuffle(x) {
 
 //undo function
 
+var unMove = true;
+
 //history moves
 window.UnClicked = function(x) {
-    if (!transferring) {
-        if (clicked.length == 0) {
-            clicked.push(x);
-            document.getElementsByClassName("test-tube")[x].style.transition = "0.2s linear";
-            document.getElementsByClassName("test-tube")[x].style.transform = "scale(1.08)";
-        }
-        else {
-            clicked.push(x);
-            var el = document.getElementsByClassName("test-tube")[clicked[0]];
-            el.style.transform = "scale(1) rotate(0deg)";
-            if (clicked[0]!=clicked[1]) {
-                // console.log(clicked[0] + " clicked[0]");
-                // console.log(clicked[1] + " clicked[1]");
-                el.style.transition = "1s linear";
-                if(moves>0){
-                    moves--;
-                }   
-                document.getElementById("moves").innerHTML = "Moves: "+moves;
-                ReTransfer(...clicked);
+    if(!history.length){
+        window.alert("Undo function is empty now !");
+    } else {
+        if (!transferring) {
+            if (clicked.length == 0) {
+                clicked.push(x);
+                document.getElementsByClassName("test-tube")[x].style.transition = "0.2s linear";
+                document.getElementsByClassName("test-tube")[x].style.transform = "scale(1.08)";
             }
-            clicked = [];
+            else {
+                clicked.push(x);
+                var el = document.getElementsByClassName("test-tube")[clicked[0]];
+                el.style.transform = "scale(1) rotate(0deg)";
+                if (clicked[0]!=clicked[1]) {
+                    // console.log(clicked[0] + " clicked[0]");
+                    // console.log(clicked[1] + " clicked[1]");
+                    el.style.transition = "1s linear";
+                    if(moves>0){
+                        moves--;
+                    } 
+                    document.getElementById("moves").innerHTML = "Moves: "+moves;
+                    ReTransfer(...clicked);
+                }
+                clicked = [];
+            }
         }
-    }
+    }     
 }
 
 function ReTransfer(a,b) {
@@ -344,8 +350,16 @@ function ReTransfer(a,b) {
 }
 
 function testingMove() {
+    if(!history.length){
+        window.alert("Undo function is empty!");
+    } else {
         UnClicked(history[0]);
         UnClicked(history[1]);
+        history[0] = 0;
+        history[1] = 0;
+    }
+
+
 }
 //testing Undo button
 function Undo() {
