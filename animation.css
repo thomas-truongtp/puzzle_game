@@ -1,0 +1,193 @@
+:root {
+    --radii: 0.5em;
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --btn-bg-1: #00f2fe;
+    --btn-bg-1-2: #4facfe;
+    --btn-bg-2: #38f9d7;
+    --btn-bg-2-2: #43e97b;
+    --btn-bg-3: #f9f871;
+    --btn-bg-3-2: #ffc75f;
+    --btn-bg-4: #f6d365;
+    --btn-bg-4-2: #fda085;
+    --btn-bg-5: #ffb199;
+    --btn-bg-5-2: #ff0844;
+    --setting-color: #bcc5ce;
+    --setting-color-2: #929ead;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-animation_1,
+    .btn-animation_2,
+    .btn-animation_3,
+    .btn-animation_4,
+    .btn-animation_5 {
+        transition: linear;
+    }
+}
+/* Button 1 */
+.btn-animation_1 {
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+        325deg,
+        var(--btn-bg-1-2) 0%,
+        var(--btn-bg-1) 55%,
+        var(--btn-bg-1-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+        0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+        inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+        inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-animation_1:hover {
+    background-position: right top;
+}
+
+.btn-animation_1:is(:focus, :focus-within, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-1-2);
+}
+
+/* Button 2 */
+.btn-animation_2 {
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+        325deg,
+        var(--btn-bg-2-2) 0%,
+        var(--btn-bg-2) 55%,
+        var(--btn-bg-2-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(113, 255, 163, 0.5),
+        0px 5px 5px -1px rgba(77, 246, 85, 0.25),
+        inset 4px 4px 8px rgba(46, 255, 108, 0.5),
+        inset -4px -4px 8px rgba(14, 245, 14, 0.35);
+}
+
+.btn-animation_2:hover {
+    background-position: right top;
+}
+
+.btn-animation_2:is(:focus, :focus-within, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2-2);
+}
+
+/* Button 3 */
+.btn-animation_3 {
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+        325deg,
+        var(--btn-bg-3-2) 0%,
+        var(--btn-bg-3) 55%,
+        var(--btn-bg-3-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(246, 252, 121, 0.5),
+        0px 5px 5px -1px rgba(223, 221, 92, 0.25),
+        inset 4px 4px 8px rgba(222, 222, 38, 0.5),
+        inset -4px -4px 8px rgba(237, 245, 7, 0.35);
+}
+
+.btn-animation_3:hover {
+    background-position: right top;
+}
+
+.btn-animation_3:is(:focus, :focus-within, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-3-2);
+}
+
+/* Button  */
+.btn-animation_4 {
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+        325deg,
+        var(--btn-bg-4-2) 0%,
+        var(--btn-bg-4) 55%,
+        var(--btn-bg-4-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(247, 196, 118, 0.5),
+        0px 5px 5px -1px rgba(251, 176, 95, 0.25),
+        inset 4px 4px 8px rgba(210, 155, 72, 0.5),
+        inset -4px -4px 8px rgba(211, 134, 66, 0.35);
+}
+
+.btn-animation_4:hover {
+    background-position: right top;
+}
+
+.btn-animation_4:is(:focus, :focus-within, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-4-2);
+}
+
+/* Button 5 */
+.btn-animation_5 {
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+        325deg,
+        var(--btn-bg-5-2) 0%,
+        var(--btn-bg-5) 55%,
+        var(--btn-bg-5-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(244, 107, 107, 0.5),
+        0px 5px 5px -1px rgba(212, 71, 71, 0.25),
+        inset 4px 4px 8px rgba(243, 37, 37, 0.5),
+        inset -4px -4px 8px rgba(243, 5, 5, 0.35);
+}
+
+.btn-animation_5:hover {
+    background-position: right top;
+}
+
+.btn-animation_5:is(:focus, :focus-within, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-5-2);
+}
+
+/* Help */
+.btn-help-animation {
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+        325deg,
+        var(--setting-color-2) 0%,
+        var(--setting-color) 55%,
+        var(--setting-color-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(219, 219, 219, 0.5),
+        0px 5px 5px -1px rgba(164, 157, 157, 0.25),
+        inset 4px 4px 8px rgba(127, 125, 125, 0.5),
+        inset -4px -4px 8px rgba(78, 73, 73, 0.35);
+}
+
+.btn-help-animation:hover {
+    background-position: right top;
+}
+
+.btn-help-animation:is(:focus, :focus-within, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--setting-color-2);
+}
