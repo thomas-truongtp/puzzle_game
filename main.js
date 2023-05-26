@@ -244,7 +244,7 @@ function Won() {
     }
     won=true;
     //console.log("hello");
-    level.innerHTML = `<div id="won">YOU WON</div><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div>`;
+    level.innerHTML = `<img src="./assets/img/Win.png" alt="" id="won"><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div>`;
 }
 
 //this is for shuffle the color of the tuble in the level 
