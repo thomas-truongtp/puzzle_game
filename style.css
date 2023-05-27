@@ -298,3 +298,12 @@ body {
 #alert-button:hover {
     background-color: rgb(150, 255, 150);
 }
+
+
+.more {
+    position: absolute;
+    left: -40px;
+    bottom: -50px;
+    scale: 0.3;
+    cursor: pointer;
+}
