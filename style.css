@@ -48,6 +48,8 @@ body {
     border-radius: 60px;
 }
 
+
+
 .title {
     width: 800px;
     height: 180px;
@@ -171,12 +173,43 @@ body {
     transition: 1s;
 }
 
+#info-tab {
+    position: fixed;
+    left: 1090px;
+    bottom: 230px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(
+        142.92deg,
+        rgba(255, 255, 255, 0.125) 15.04%,
+        rgba(255, 255, 255, 0.17) 106.63%
+    );
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(35.5px);
+    border-radius: 20px;
+    z-index: -999;
+}
+
+#moves {
+    color: white;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    top: 46px;
+    left: calc(100vw - 1465px);
+    font-size: 40px;
+    font-weight: 700;
+    z-index: 900;
+}
+
 #restart {
-    left: 0;
+    left: calc(100vw - 370px);
+    top: 430px;
 }
 
 #undo {
-    left: calc(100vw - 450px);
+    left: calc(100vw - 370px);
+    top: 350px;
 }
 
 #home {
@@ -192,12 +225,19 @@ body {
     font-weight: 600;
     text-align: center;
     line-height: 50px;
-    /* background-color: lightgreen;
-    border-radius: 10px 10px 0 0; */
-    background: linear-gradient(99.63deg, #c400d4 0%, #9b00b8 98.54%);
+    /* background: linear-gradient(99.63deg, #c400d4 0%, #9b00b8 98.54%); */
+    border: white 1px solid;
     border-radius: 10px;
     color: white;
     font-weight: 800;
+}
+
+.home-btn {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    scale: 0.4;
+    cursor: pointer;
 }
 
 #lvl-heading {
@@ -227,16 +267,7 @@ body {
         9px 7px 1px #4af7ff;
 }
 
-#moves {
-    color: white;
-    position: fixed;
-    top: calc(100vh - 80px);
-    width: 150px;
-    height: 30px;
-    left: 10px;
-    font-size: 20px;
-    font-weight: 700;
-}
+
 
 /* RULES PAGE */
 #rules-page,
@@ -302,7 +333,9 @@ body {
     border-radius: 10px;
     color: white;
     font-weight: 800;
+    cursor: pointer;
 }
+
 
 #alert-button:hover {
     background-color: rgb(150, 255, 150);

@@ -26,14 +26,14 @@ window.HideRules = function() {
 
 //MEMBER PANEL
 
-window.Showmember = function() {
+window.ShowMember = function() {
     document.getElementById("member-page").style.display = "block";
     setTimeout(function() {
         document.getElementById("member-page").style.opacity = "1";
     }, 50); 
 }
 
-window.Hidemember = function() {
+window.HideMember = function() {
     setTimeout(function() {
         document.getElementById("member-page").style.display = "none";
     }, 500);
@@ -81,8 +81,10 @@ function ApplyInfo(a = water) {
         level.innerHTML = `<div id = 'lvl-heading'>${heading}</div>`;
 
         level.innerHTML+=`<div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div>
-        <div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div>
+        <img src="./assets/img/Home.png" alt="Home" class="home-btn" onclick = "ShowMenu();">
         <div id = "undo" class = "game-buttons" onclick = "Undo();">UNDO</div>
+        <div id="info-tab">
+        <div id="bg-tab">
         <div id = "moves">Moves: ${moves}</div>`;
         //map the tube moves
         for (let i of testTubePosition[currentLevel]) {
@@ -181,7 +183,7 @@ function Transfer(a,b) {
         }
         if (((water[b][i]!="transparent" && water[b][i+1]=="transparent") || water[b][0]=="transparent") && !s) {
             s=true;
-            q=[water[b][i],i,water[b].map((x)=>x= (x=="transparent") ? 1 : 0).reduce((x,y)=>x+y)];
+            q=[water[b][i],i,water[b].map((x)=>x = (x=="transparent") ? 1 : 0).reduce((x,y)=>x+y)];
         }
     }
     //console.log(p);
@@ -260,10 +262,10 @@ function Won() {
     }
     won=true;
     //console.log("hello");
-    level.innerHTML = `<img src="./assets/img/Win.png" alt="" id="won"><div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div><div id = "home" class = "game-buttons" onclick = "ShowMenu();">HOME</div>`;
+    level.innerHTML = `<img src="./assets/img/Win.png" alt="" id="won"><img src="./assets/img/Home.png" alt="Home" class="home-btn" onclick = "ShowMenu();">`;
 }
 
-//this is for shuffle the color of the tuble in the level 
+//this is for shuffle the color of the tubble in the level 
 function shuffle(x) {
     var a=[],len=x.length;
     for (let i = 0; i < len; i++) {

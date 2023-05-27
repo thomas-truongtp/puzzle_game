@@ -17,6 +17,13 @@
     --setting-color: #ff49f3;
     --setting-color-2: #d31be4;
     --btn-color: #ff0081;
+
+    --liquid-grd: linear-gradient(
+        325deg,
+        var(--btn-bg-1) 0%,
+        var(--btn-bg-1-2) 55%,
+        var(--btn-bg-1) 90%
+    );
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -49,7 +56,8 @@
 
 .hover-animation:is(:focus, :focus-within, :active) {
     outline: none;
-    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-default-1-3);
+    box-shadow: 0 0 0 3px var(--btn-bg-color),
+        0 0 0 6px var(--btn-bg-default-1-3);
 }
 
 /* List hover */
@@ -164,7 +172,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .0009s;
+    transition: all 0.0009s;
 }
 
 .hover-animation:hover::after {
@@ -172,6 +180,20 @@
     opacity: 0;
 }
 
-.more:hover {
+.more:hover,
+.home-btn:hover {
     transform: translateY(-20px);
+}
+
+.game-buttons {
+    border-color: #ffffff;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.game-buttons:hover {
+    box-shadow: inset 5em 0 0 0 var(--setting-color),
+        inset -5em 0 0 0 var(--setting-color);
+    border-color: var(--setting-color-2);
+    color: #fff;
 }
