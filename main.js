@@ -24,6 +24,22 @@ window.HideRules = function() {
     document.getElementById("rules-page").style.opacity = "0";
 }
 
+//MEMBER PANEL
+
+window.Showmember = function() {
+    document.getElementById("member-page").style.display = "block";
+    setTimeout(function() {
+        document.getElementById("member-page").style.opacity = "1";
+    }, 50); 
+}
+
+window.Hidemember = function() {
+    setTimeout(function() {
+        document.getElementById("member-page").style.display = "none";
+    }, 500);
+    document.getElementById("member-page").style.opacity = "0";
+}
+
 //on load the web
 
 window.onload = function() {

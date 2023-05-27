@@ -27,45 +27,45 @@
         <div id="game" class="container">
             <div id="menu">
                 <!-- <div id="menu-heading">WATER SORT PUZZLE</div> -->
-                <img src="./assets/img/Title.png" alt="" class="title">
+                <img src="./assets/img/Title.png" alt="title of the game" class="title">
                 <div class="menu-list">
                     <div
-                        class="lvl item btn-animation"
+                        class="lvl item hover-animation hover-1"
                         id="easy"
                         onclick="OpenLevel(0);"
                     >
                         EASY
                     </div>
                     <div
-                        class="lvl item btn-animation"
+                        class="lvl item hover-animation hover-2"
                         id="medium"
                         onclick="OpenLevel(1);"
                     >
                         MEDIUM
                     </div>
                     <div
-                        class="lvl item btn-animation"
+                        class="lvl item hover-animation hover-3"
                         id="hard"
                         onclick="OpenLevel(2);"
                     >
                         HARD
                     </div>
                     <div
-                        class="lvl item btn-animation"
+                        class="lvl item hover-animation hover-4"
                         id="very-hard"
                         onclick="OpenLevel(3)"
                     >
                         VERY HARD
                     </div>
                     <div
-                        class="lvl item btn-animation"
+                        class="lvl item hover-animation hover-5"
                         id="impossible"
                         onclick="OpenLevel  (7);"
                     >
                         IMPOSSIBLE
                     </div>
                     <div
-                        class="lvl item btn-help-animation"
+                        class="lvl item btn-help-animation hover-animation"
                         id="impossible"
                         onclick="ShowRules();"
                     >
@@ -73,28 +73,16 @@
                     </div>
                 </div>
             </div>
-            <img src="./assets/img/More.png" alt="" class="more">
+            <img src="./assets/img/More.png" alt="" class="more" id="more" onclick="Showmember()";>
             <div id="level"></div>
             <div id="rules-page">
-                <!-- <div id="rules">
-                    <div id="rules-heading">RULES</div>
-                    <div id="rules-text">
-                        There will be some glasses (or test tubes to be exact
-                        xD), your task is to put the liquids with same color
-                        together! You can transfer different colored water from
-                        one glass to another only if the other glass is empty or
-                        its top most layer of water is of the same color as that
-                        of the one from which water is to be taken. The glass
-                        you have selected will be highlighted to prevent
-                        confusion. Restart button will take you back to the
-                        beginning of the level, also every time you open the
-                        same level the water will be shuffled. Check out the
-                        real game 'Water sort puzzle' on playstore, I have
-                        cloned it.
-                    </div> -->
-                    <img src="./assets/img/Rule.png" alt="" class="rules">
-                    <div id="back" onclick="HideRules();">Back</div>
-                </div>
+                <img src="./assets/img/Rule.png" alt="" class="rules">
+                <div id="back" onclick="HideRules();">Back</div>
+            </div>
+            <div id="member-page">
+                <img src="./assets/img/Member.png" alt="" class="member">
+                <div id="back" onclick="Hidemember();">Back</div>
+                
             </div>
         </div>
     </body>

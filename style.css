@@ -239,7 +239,8 @@ body {
 }
 
 /* RULES PAGE */
-#rules-page {
+#rules-page,
+#member-page {
     display: none;
     z-index: 1000;
     position: absolute;
@@ -257,6 +258,13 @@ body {
     scale: 0.5;
     top: -300px;
     left: -170px;
+}
+
+.member {
+    position: absolute;
+    scale: 0.5;
+    top: 45px;
+    left: 190px;
 }
 
 /* #rules-heading {
@@ -279,6 +287,7 @@ body {
     height: calc(100vh - 200px - 150px);
     overflow-x: hidden;
 } */
+
 
 #back {
     position: absolute;
