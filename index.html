@@ -1,54 +1,110 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>Water Sort Puzzle Game</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-	<div id="game">
-		<div id="menu">
-			<div id="menu-heading">WATER SORT PUZZLE</div>
-			<div class="lvl" id="easy" onclick="OpenLevel(0);">EASY</div>
-			<div class="lvl" id="medium" onclick="OpenLevel(1);">MEDIUM</div>
-			<div class="lvl" id="hard" onclick="OpenLevel(2);">HARD</div>
-			<div class="lvl" id="very-hard" onclick="OpenLevel(3)">VERY HARD</div>
-			<div class="lvl" id="impossible" onclick="OpenLevel(7);">IMPOSSIBLE</div>
-			<br><br><br>
-			<div id="rules-btn" onclick="ShowRules();">RULES</div>
-		</div>
-		<div id="level"></div>
-		<div id="rules-page">
-			<div id="rules">
-				<div id="rules-heading">RULES</div>
-				<div id="rules-text">There will be some glasses (or test tubes to be exact xD), your task is to put the liquids with same color together! You can transfer different colored water from one glass to another only if the other glass is empty or
-					its top most layer of water is of the same color as that of the one from which water is to be taken. The glass you have selected will be highlighted to prevent confusion. Restart button will take you back to the beginning of the level, also
-					every time you open the same level the water will be shuffled. Check out the real game 'Water sort puzzle' on playstore, I have cloned it.</div>
-				<div id="back" onclick="HideRules();">BACK</div>
-			</div>
-		</div>
-		<img src="./assets/img/More.png" alt="" class="more" id="more" onclick="ShowMember()" ; />
-		<div id="level"></div>
-		<div id="rules-page">
-			<img src="./assets/img/Rule.png" alt="" class="rules" />
-			<div id="back" class="hover-animation" onclick="HideRules();">Back</div>
-		</div>
-		<div id="member-page">
-			<img src="./assets/img/Member.png" alt="" class="member" />
-			<div id="back" class="hover-animation" onclick="HideMember();">
-				Back
-			</div>
-		</div>
-	</div>
-</body>
-<script type="text/javascript" src="main.js"></script>
-
+  <head>
+    <title>Water Sort Puzzle Game</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="animation.css" />
+  </head>
+  <body>
+    <div id="game" class="container">
+      <div id="menu">
+        <!-- <div id="menu-heading">WATER SORT PUZZLE</div> -->
+        <img
+          src="./assets/img/Title.png"
+          alt="title of the game"
+          class="title"
+        />
+        <div class="menu-list">
+          <div
+            class="lvl item hover-animation hover-1"
+            id="easy"
+            onclick="OpenLevel(0);"
+          >
+            EASY
+          </div>
+          <div
+            class="lvl item hover-animation hover-2"
+            id="medium"
+            onclick="OpenLevel(1);"
+          >
+            MEDIUM
+          </div>
+          <div
+            class="lvl item hover-animation hover-3"
+            id="hard"
+            onclick="OpenLevel(2);"
+          >
+            HARD
+          </div>
+          <div
+            class="lvl item hover-animation hover-4"
+            id="very-hard"
+            onclick="OpenLevel(3)"
+          >
+            VERY HARD
+          </div>
+          <div
+            class="lvl item hover-animation hover-5"
+            id="impossible"
+            onclick="OpenLevel  (7);"
+          >
+            IMPOSSIBLE
+          </div>
+          <div
+            class="lvl item btn-help-animation hover-animation"
+            id="impossible"
+            onclick="ShowRules();"
+          >
+            RULES
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/img/More.png"
+        alt=""
+        class="more"
+        id="more"
+        onclick="ShowMember()"
+        ;
+      />
+      <div id="level"></div>
+      <div id="rules-page">
+        <img src="./assets/img/Rule.png" alt="" class="rules" />
+        <div id="back" class="hover-animation" onclick="HideRules();">Back</div>
+      </div>
+      <div id="member-page">
+        <img src="./assets/img/Member.png" alt="" class="member" />
+        <div id="back" class="hover-animation" onclick="HideMember();">
+          Back
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="main.js"></script>
 </html>
 
 <!-- <img src="./assets/img/Win.png" alt="" id="won"> -->
-<img src="./assets/img/Home.png" alt="Home" class="home" onclick="ShowMenu();" />
+<img
+  src="./assets/img/Home.png"
+  alt="Home"
+  class="home"
+  onclick="ShowMenu();"
+/>
