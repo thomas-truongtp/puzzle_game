@@ -146,11 +146,11 @@ body {
     color: white;
     background-image: url(./assets/img/Win.png);
     z-index: 1000; */
-
+    object-fit: contain;
     position: absolute;
-    left: 500px;
-    top: 100px;
-    scale: 1.4 ;
+    left: calc(100vw - 1020px);
+    top: calc(100vh - 600px);
+    scale: 1.4;
 }
 
 #white-bg {
@@ -161,6 +161,7 @@ body {
     height: 10px; */
     /* background-color: white; */
     background-image: url(./assets/img/Bg.png);
+    object-fit: fill;
     z-index: 1000;
     transition: 1s;
 }
