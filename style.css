@@ -148,9 +148,9 @@ body {
     z-index: 1000; */
     object-fit: contain;
     position: absolute;
-    left: calc(100vw - 1020px);
-    top: calc(100vh - 600px);
-    scale: 1.4;
+    left: calc(100vw - 1640px);
+    top: calc(100vh - 1450px);
+    scale: 0.2;
 }
 
 #white-bg {
@@ -193,23 +193,23 @@ body {
 
 #moves {
     color: white;
-    position: absolute;
-    width: 200px;
-    height: 30px;
-    top: 46px;
-    left: calc(100vw - 1465px);
+    position: relative;
+    /* width: 200px;
+    height: 30px; */
+    left: calc(100vw - 480px);
+    top: 270px;
     font-size: 40px;
     font-weight: 700;
-    z-index: 900;
+    /* z-index: 900; */
 }
 
 #restart {
-    left: calc(100vw - 370px);
+    left: calc(100vw - 470px);
     top: 430px;
 }
 
 #undo {
-    left: calc(100vw - 370px);
+    left: calc(100vw - 470px);
     top: 350px;
 }
 

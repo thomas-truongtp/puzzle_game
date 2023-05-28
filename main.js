@@ -83,7 +83,6 @@ function ApplyInfo(a = water) {
         level.innerHTML+=`<div id = "restart" class = "game-buttons" onclick = "Restart();">RESTART</div>
         <img src="./assets/img/Home.png" alt="Home" class="home-btn" onclick = "ShowMenu();">
         <div id = "undo" class = "game-buttons" onclick = "Undo();">UNDO</div>
-        <div id="info-tab">
         <div id="bg-tab">
         <div id = "moves">Moves: ${moves}</div>`;
         //map the tube moves
