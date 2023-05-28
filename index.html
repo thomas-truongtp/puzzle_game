@@ -1,93 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Water Sort Puzzle Game</title>
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./favicon_io/apple-touch-icon.png"
+  <head>
+    <title>Water Sort Puzzle Game</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="animation.css" />
+  </head>
+  <body>
+    <div id="game" class="container">
+      <div id="menu">
+        <!-- <div id="menu-heading">WATER SORT PUZZLE</div> -->
+        <img
+          src="./assets/img/Title.png"
+          alt="title of the game"
+          class="title"
         />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./favicon_io/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./favicon_io/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" type="text/css" href="animation.css" />
-    </head>
-    <body>
-        <div id="game" class="container">
-            <div id="menu">
-                <!-- <div id="menu-heading">WATER SORT PUZZLE</div> -->
-                <img src="./assets/img/Title.png" alt="title of the game" class="title">
-                <div class="menu-list">
-                    <div
-                        class="lvl item hover-animation hover-1"
-                        id="easy"
-                        onclick="OpenLevel(0);"
-                    >
-                        EASY
-                    </div>
-                    <div
-                        class="lvl item hover-animation hover-2"
-                        id="medium"
-                        onclick="OpenLevel(1);"
-                    >
-                        MEDIUM
-                    </div>
-                    <div
-                        class="lvl item hover-animation hover-3"
-                        id="hard"
-                        onclick="OpenLevel(2);"
-                    >
-                        HARD
-                    </div>
-                    <div
-                        class="lvl item hover-animation hover-4"
-                        id="very-hard"
-                        onclick="OpenLevel(3)"
-                    >
-                        VERY HARD
-                    </div>
-                    <div
-                        class="lvl item hover-animation hover-5"
-                        id="impossible"
-                        onclick="OpenLevel  (7);"
-                    >
-                        IMPOSSIBLE
-                    </div>
-                    <div
-                        class="lvl item btn-help-animation hover-animation"
-                        id="impossible"
-                        onclick="ShowRules();"
-                    >
-                        RULES
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/img/More.png" alt="" class="more" id="more" onclick="ShowMember()";>
-            <div id="level"></div>
-            <div id="rules-page">
-                <img src="./assets/img/Rule.png" alt="" class="rules">
-                <div id="back" class="hover-animation" onclick="HideRules();">Back</div>
-            </div>
-            <div id="member-page">
-                <img src="./assets/img/Member.png" alt="" class="member">
-                <div id="back" class="hover-animation" onclick="HideMember();">Back</div>
-                
-            </div>
+        <div class="menu-list">
+          <div
+            class="lvl item hover-animation hover-1"
+            id="easy"
+            onclick="OpenLevel(0);"
+          >
+            EASY
+          </div>
+          <div
+            class="lvl item hover-animation hover-2"
+            id="medium"
+            onclick="OpenLevel(1);"
+          >
+            MEDIUM
+          </div>
+          <div
+            class="lvl item hover-animation hover-3"
+            id="hard"
+            onclick="OpenLevel(2);"
+          >
+            HARD
+          </div>
+          <div
+            class="lvl item hover-animation hover-4"
+            id="very-hard"
+            onclick="OpenLevel(3)"
+          >
+            VERY HARD
+          </div>
+          <div
+            class="lvl item hover-animation hover-5"
+            id="impossible"
+            onclick="OpenLevel  (7);"
+          >
+            IMPOSSIBLE
+          </div>
+          <div
+            class="lvl item btn-help-animation hover-animation"
+            id="impossible"
+            onclick="ShowRules();"
+          >
+            RULES
+          </div>
         </div>
-    </body>
-    <script type="text/javascript" src="main.js"></script>
+      </div>
+      <img
+        src="./assets/img/More.png"
+        alt=""
+        class="more"
+        id="more"
+        onclick="ShowMember()"
+        ;
+      />
+      <div id="level"></div>
+      <div id="rules-page">
+        <img src="./assets/img/Rule.png" alt="" class="rules" />
+        <div id="back" class="hover-animation" onclick="HideRules();">Back</div>
+      </div>
+      <div id="member-page">
+        <img src="./assets/img/Member.png" alt="" class="member" />
+        <div id="back" class="hover-animation" onclick="HideMember();">
+          Back
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="main.js"></script>
 </html>
 
 <!-- <img src="./assets/img/Win.png" alt="" id="won"> -->
-<img src="./assets/img/Home.png" alt="Home" class="home" onclick = "ShowMenu();">
+<img
+  src="./assets/img/Home.png"
+  alt="Home"
+  class="home"
+  onclick="ShowMenu();"
+/>
